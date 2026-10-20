@@ -75,7 +75,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <a href="/" class="flex items-center gap-2">
-          <span class="text-xl font-bold text-primary-500 dark:text-accent-400">TVI</span>
+          <img src="images/logo.webp" alt="TVI Home Services logo" class="h-9 w-auto">
           <span class="text-sm font-medium text-gray-600 dark:text-gray-400 hidden sm:inline">Home Services</span>
         </a>
         <div class="hidden md:flex items-center gap-6">
@@ -120,8 +120,10 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero-gradient text-white py-20 md:py-32">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="relative text-white py-20 md:py-32 overflow-hidden">
+      <img src="images/hero-home.webp" alt="Freshly cleaned home exterior on Vancouver Island" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0" style="background:linear-gradient(135deg, rgba(30,58,95,0.92) 0%, rgba(13,148,136,0.82) 100%)"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">Elevate Your Property</h1>
         <p class="text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto">Professional exterior cleaning, restoration, and lighting for homes and businesses across Vancouver Island.</p>
         <p class="text-lg text-white/70 mb-10">A Division of Trimlight Van Isle</p>
@@ -336,7 +338,7 @@
         </div>
         <div>
           <h4 class="text-white font-semibold mb-4">Quick Contact</h4>
-          <form class="space-y-3" action="#" method="POST">
+          <form class="space-y-3" action="https://formsubmit.co/info@trimlightvanisle.ca" method="POST">
             <input type="text" name="name" placeholder="Your Name" required class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded text-sm text-white placeholder-gray-500 focus:outline-none focus:border-accent-500">
             <input type="email" name="email" placeholder="Email" required class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded text-sm text-white placeholder-gray-500 focus:outline-none focus:border-accent-500">
             <input type="tel" name="phone" placeholder="Phone" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded text-sm text-white placeholder-gray-500 focus:outline-none focus:border-accent-500">

@@ -41,7 +41,7 @@
   <nav class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="text-xl font-bold text-amber">Trimlight Van Isle</a>
+        <a href="index.html" class="flex items-center"><img src="images/logo-white.webp" alt="Trimlight Van Isle" class="h-9 w-auto"></a>
         <div class="hidden md:flex items-center gap-6">
           <a href="index.html" class="text-white hover:text-amber transition">Home</a>
           <a href="about.html" class="text-amber">About</a>
@@ -94,13 +94,8 @@
           <p class="text-gray-300">Based in the Cowichan Valley, we serve families and businesses across Vancouver Island, from Ladysmith to Sooke, Sidney to Nanaimo, and the Gulf Islands. Our mission is simple: help Vancouver Island families and businesses mark life's moments with safe, low-effort permanent lighting, while strengthening local communities.</p>
         </div>
         <div class="bg-navy/60 border border-white/10 rounded-xl p-8">
-          <div class="w-full h-80 bg-navyLight rounded-lg flex items-center justify-center">
-            <div class="text-center">
-              <svg class="w-20 h-20 text-amber/40 mx-auto mb-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
-              <p class="text-gray-500">Herman &amp; Shannon Smelt</p>
-              <p class="text-gray-600 text-sm mt-1">Founders, Trimlight Van Isle</p>
-            </div>
-          </div>
+          <img src="images/herman-shannon.webp" alt="Herman and Shannon Smelt, founders of Trimlight Van Isle" class="w-full h-80 object-cover rounded-lg">
+          <p class="text-center text-gray-500 text-sm mt-4">Herman &amp; Shannon Smelt &mdash; Founders, Trimlight Van Isle</p>
         </div>
       </div>
     </div>
@@ -245,8 +240,8 @@
         </div>
         <div>
           <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
-          <form class="space-y-3">
-            <input type="text" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
+          <form class="space-y-3" action="https://formsubmit.co/info@trimlightvanisle.ca" method="POST">
+            <input type="text" name="first_name" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
             <input type="email" placeholder="Email" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
             <textarea placeholder="Message" required rows="3" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber resize-none"></textarea>
             <button type="submit" class="w-full bg-amber text-navy font-semibold py-2 rounded hover:bg-amberLight transition text-sm">Send Message</button>
