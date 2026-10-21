@@ -14,9 +14,15 @@
   </url>
   <url>
     <loc>https://tvihomeservices.ca/contact.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tvihomeservices.ca/blog.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://tvihomeservices.ca/services/window-washing.html</loc>
