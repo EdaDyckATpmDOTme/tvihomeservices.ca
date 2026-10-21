@@ -15,7 +15,19 @@
   <script src="https://cdn.tailwindcss.com/3.4.1"></script>
   <script>
     tailwind.config = {
-      theme: { extend: { colors: { navy: '#0f172a', navyLight: '#1e293b', amber: '#f59e0b', amberDark: '#d97706', amberLight: '#fbbf24' } } }
+            theme: {
+        extend: {
+          colors: {
+            navy: '#3e3e3e',
+            navyLight: '#4a4a4a',
+            amber: '#2b8fc0',
+            amberDark: '#5fb3dd',
+            amberLight: '#8dcbec',
+            sky: '#8dcbec',
+            cream: '#F0F3BD',
+          }
+        }
+      }
     }
   </script>
   <style>
@@ -25,7 +37,7 @@
     .hamburger-active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
   </style>
 </head>
-<body class="bg-navy text-white font-sans">
+<body class="bg-white text-[#3e3e3e] font-sans">
 
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
@@ -40,13 +52,13 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
             </button>
             <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
-              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-56 shadow-xl">
-                <a href="services/residential-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Residential Lighting</a>
-                <a href="services/landscape-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Landscape Lighting</a>
-                <a href="services/commercial-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Commercial Lighting</a>
-                <a href="services/deck-patio-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Deck &amp; Patio Lighting</a>
-                <a href="services/down-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Down Lighting</a>
-                <a href="services/ridge-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Ridge Lighting</a>
+              <div class="bg-white border border-black/10 rounded-lg py-2 w-56 shadow-xl">
+                <a href="services/residential-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Residential Lighting</a>
+                <a href="services/landscape-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Landscape Lighting</a>
+                <a href="services/commercial-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Commercial Lighting</a>
+                <a href="services/deck-patio-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Deck &amp; Patio Lighting</a>
+                <a href="services/down-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Down Lighting</a>
+                <a href="services/ridge-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Ridge Lighting</a>
               </div>
             </div>
           </div>
@@ -55,16 +67,16 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
             </button>
             <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
-              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-48 shadow-xl">
-                <a href="portfolio.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Project Showcase</a>
-                <a href="gallery.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Our Gallery</a>
-                <a href="blog.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Blog</a>
+              <div class="bg-white border border-black/10 rounded-lg py-2 w-48 shadow-xl">
+                <a href="portfolio.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Project Showcase</a>
+                <a href="gallery.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Our Gallery</a>
+                <a href="blog.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Blog</a>
               </div>
             </div>
           </div>
           <a href="payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
           <a href="contact.html" class="text-white hover:text-amber transition">Contact</a>
-          <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded hover:bg-amberLight transition">(778) 744-4004</a>
+          <a href="tel:7787444004" class="bg-[#8dcbec] text-navy font-semibold px-4 py-2 rounded hover:bg-[#5fb3dd] transition">(778) 744-4004</a>
         </div>
         <button id="mobileMenuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
           <span class="block w-6 h-0.5 bg-white transition-transform"></span>
@@ -90,16 +102,16 @@
         <a href="blog.html" class="text-white hover:text-amber transition pl-3">Blog</a>
         <a href="payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
         <a href="contact.html" class="text-white hover:text-amber transition">Contact</a>
-        <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded text-center hover:bg-amberLight transition">(778) 744-4004</a>
+        <a href="tel:7787444004" class="bg-[#8dcbec] text-navy font-semibold px-4 py-2 rounded text-center hover:bg-[#5fb3dd] transition">(778) 744-4004</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="relative bg-gradient-to-br from-navy via-navyLight to-navy py-20 overflow-hidden">
+  <header class="relative bg-gradient-to-br from-[#8dcbec] to-[#5fb3dd] py-20 overflow-hidden">
     <div class="absolute inset-0 opacity-20">
-      <div class="absolute top-10 right-10 w-72 h-72 bg-amber/30 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-10 left-10 w-64 h-64 bg-amber/20 rounded-full blur-3xl"></div>
+      <div class="absolute top-10 right-10 w-72 h-72 bg-[#8dcbec]/40 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 left-10 w-64 h-64 bg-[#8dcbec]/30 rounded-full blur-3xl"></div>
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-amber font-semibold uppercase tracking-widest mb-4">Our Work</p>
@@ -109,14 +121,14 @@
   </header>
 
   <!-- Portfolio Filter + Grid -->
-  <section class="py-20 bg-navyLight">
+  <section class="py-20 bg-[#F0F3BD]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Filter Buttons -->
       <div class="flex flex-wrap justify-center gap-3 mb-12">
-        <button data-filter="all" class="filter-btn active bg-amber text-navy font-semibold px-6 py-2 rounded-full transition">All</button>
-        <button data-filter="commercial" class="filter-btn bg-navy border border-white/20 text-white font-semibold px-6 py-2 rounded-full hover:border-amber hover:text-amber transition">Commercial</button>
-        <button data-filter="residential" class="filter-btn bg-navy border border-white/20 text-white font-semibold px-6 py-2 rounded-full hover:border-amber hover:text-amber transition">Residential</button>
+        <button data-filter="all" class="filter-btn active bg-[#8dcbec] text-navy font-semibold px-6 py-2 rounded-full transition">All</button>
+        <button data-filter="commercial" class="filter-btn bg-white border border-black/10 text-[#3e3e3e] font-semibold px-6 py-2 rounded-full hover:border-[#8dcbec] hover:text-amber transition">Commercial</button>
+        <button data-filter="residential" class="filter-btn bg-white border border-black/10 text-[#3e3e3e] font-semibold px-6 py-2 rounded-full hover:border-[#8dcbec] hover:text-amber transition">Residential</button>
       </div>
 
       <!-- Projects Grid -->
@@ -124,75 +136,75 @@
 
         <!-- Victoria Royals -->
         <div class="project-card" data-category="commercial">
-          <div class="bg-navy/60 border border-white/10 rounded-xl overflow-hidden group hover:border-amber/30 transition">
-            <div class="aspect-video bg-navyLight flex items-center justify-center relative overflow-hidden">
+          <div class="bg-white/60 border border-black/10 rounded-xl overflow-hidden group hover:border-[#8dcbec]/60 transition">
+            <div class="aspect-video bg-[#F0F3BD] flex items-center justify-center relative overflow-hidden">
               <img src="images/commercial-1.webp" alt="Victoria Royals stanchion LED lighting installation" class="absolute inset-0 w-full h-full object-cover">
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
-              <span class="absolute top-3 left-3 bg-amber text-navy text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
+              <span class="absolute top-3 left-3 bg-[#8dcbec] text-navy text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
             </div>
             <div class="p-6">
               <h3 class="text-lg font-semibold mb-2">Victoria Royals Stanchion Lighting</h3>
-              <p class="text-gray-400 text-sm">Custom LED stanchion lighting installation for the Victoria Royals. A high-visibility commercial project showcasing dynamic colour capabilities.</p>
+              <p class="text-gray-600 text-sm">Custom LED stanchion lighting installation for the Victoria Royals. A high-visibility commercial project showcasing dynamic colour capabilities.</p>
             </div>
           </div>
         </div>
 
         <!-- Country Grocer -->
         <div class="project-card" data-category="commercial">
-          <div class="bg-navy/60 border border-white/10 rounded-xl overflow-hidden group hover:border-amber/30 transition">
-            <div class="aspect-video bg-navyLight flex items-center justify-center relative overflow-hidden">
+          <div class="bg-white/60 border border-black/10 rounded-xl overflow-hidden group hover:border-[#8dcbec]/60 transition">
+            <div class="aspect-video bg-[#F0F3BD] flex items-center justify-center relative overflow-hidden">
               <img src="images/installation.webp" alt="Country Grocer storefront permanent LED lighting" class="absolute inset-0 w-full h-full object-cover">
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
-              <span class="absolute top-3 left-3 bg-amber text-navy text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
+              <span class="absolute top-3 left-3 bg-[#8dcbec] text-navy text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
             </div>
             <div class="p-6">
               <h3 class="text-lg font-semibold mb-2">Country Grocer &amp; Trimlight</h3>
-              <p class="text-gray-400 text-sm">Permanent LED lighting installation for Country Grocer, enhancing the storefront's visibility and creating a welcoming atmosphere for customers.</p>
+              <p class="text-gray-600 text-sm">Permanent LED lighting installation for Country Grocer, enhancing the storefront's visibility and creating a welcoming atmosphere for customers.</p>
             </div>
           </div>
         </div>
 
         <!-- Curves and Creative -->
         <div class="project-card" data-category="residential">
-          <div class="bg-navy/60 border border-white/10 rounded-xl overflow-hidden group hover:border-amber/30 transition">
-            <div class="aspect-video bg-navyLight flex items-center justify-center relative overflow-hidden">
+          <div class="bg-white/60 border border-black/10 rounded-xl overflow-hidden group hover:border-[#8dcbec]/60 transition">
+            <div class="aspect-video bg-[#F0F3BD] flex items-center justify-center relative overflow-hidden">
               <img src="images/residential-1.webp" alt="Residential LED lighting highlighting architectural curves" class="absolute inset-0 w-full h-full object-cover">
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
-              <span class="absolute top-3 left-3 bg-amber/80 text-navy text-xs font-bold px-3 py-1 rounded-full">Residential</span>
+              <span class="absolute top-3 left-3 bg-[#8dcbec] text-navy text-xs font-bold px-3 py-1 rounded-full">Residential</span>
             </div>
             <div class="p-6">
               <h3 class="text-lg font-semibold mb-2">Curves and Creative</h3>
-              <p class="text-gray-400 text-sm">A residential installation highlighting the home's unique architectural curves with precision-placed LED lighting along the roofline and eaves.</p>
+              <p class="text-gray-600 text-sm">A residential installation highlighting the home's unique architectural curves with precision-placed LED lighting along the roofline and eaves.</p>
             </div>
           </div>
         </div>
 
         <!-- Close Up -->
         <div class="project-card" data-category="residential">
-          <div class="bg-navy/60 border border-white/10 rounded-xl overflow-hidden group hover:border-amber/30 transition">
-            <div class="aspect-video bg-navyLight flex items-center justify-center relative overflow-hidden">
+          <div class="bg-white/60 border border-black/10 rounded-xl overflow-hidden group hover:border-[#8dcbec]/60 transition">
+            <div class="aspect-video bg-[#F0F3BD] flex items-center justify-center relative overflow-hidden">
               <img src="images/residential-2.webp" alt="Close-up of discreet Trimlight channel system on home trim" class="absolute inset-0 w-full h-full object-cover">
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
-              <span class="absolute top-3 left-3 bg-amber/80 text-navy text-xs font-bold px-3 py-1 rounded-full">Residential</span>
+              <span class="absolute top-3 left-3 bg-[#8dcbec] text-navy text-xs font-bold px-3 py-1 rounded-full">Residential</span>
             </div>
             <div class="p-6">
               <h3 class="text-lg font-semibold mb-2">Close Up</h3>
-              <p class="text-gray-400 text-sm">A detailed close-up view showcasing the clean, discreet Trimlight channel system that blends seamlessly with the home's exterior trim and fascia.</p>
+              <p class="text-gray-600 text-sm">A detailed close-up view showcasing the clean, discreet Trimlight channel system that blends seamlessly with the home's exterior trim and fascia.</p>
             </div>
           </div>
         </div>
 
         <!-- Daytime to Nighttime -->
         <div class="project-card" data-category="residential">
-          <div class="bg-navy/60 border border-white/10 rounded-xl overflow-hidden group hover:border-amber/30 transition">
-            <div class="aspect-video bg-navyLight flex items-center justify-center relative overflow-hidden">
+          <div class="bg-white/60 border border-black/10 rounded-xl overflow-hidden group hover:border-[#8dcbec]/60 transition">
+            <div class="aspect-video bg-[#F0F3BD] flex items-center justify-center relative overflow-hidden">
               <img src="images/residential-3.webp" alt="Home shown day and night with permanent LED lighting" class="absolute inset-0 w-full h-full object-cover">
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
-              <span class="absolute top-3 left-3 bg-amber/80 text-navy text-xs font-bold px-3 py-1 rounded-full">Residential</span>
+              <span class="absolute top-3 left-3 bg-[#8dcbec] text-navy text-xs font-bold px-3 py-1 rounded-full">Residential</span>
             </div>
             <div class="p-6">
               <h3 class="text-lg font-semibold mb-2">Daytime to Nighttime</h3>
-              <p class="text-gray-400 text-sm">See the transformation from day to night. During the day, the Trimlight system is virtually invisible. At night, it brings the home to life with vibrant, customizable LED lighting.</p>
+              <p class="text-gray-600 text-sm">See the transformation from day to night. During the day, the Trimlight system is virtually invisible. At night, it brings the home to life with vibrant, customizable LED lighting.</p>
             </div>
           </div>
         </div>
@@ -202,12 +214,12 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 bg-gradient-to-r from-amber to-amberDark">
+  <section class="py-16 bg-gradient-to-r from-[#8dcbec] to-[#5fb3dd]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Want Your Home Featured Here?</h2>
       <p class="text-navy/80 text-lg mb-8">Contact us for a free consultation and join our growing list of happy customers across Vancouver Island.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="contact.html" class="bg-navy text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-navyLight transition">Get Your Free Quote</a>
+        <a href="contact.html" class="bg-white text-[#3e3e3e] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#F0F3BD] transition">Get Your Free Quote</a>
         <a href="tel:7787444004" class="bg-white/20 text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-white/30 transition">(778) 744-4004</a>
       </div>
     </div>
@@ -251,10 +263,10 @@
         <div>
           <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
           <form class="space-y-3" action="https://formsubmit.co/info@trimlightvanisle.ca" method="POST">
-            <input type="text" name="first_name" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
-            <input type="email" placeholder="Email" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
-            <textarea placeholder="Message" required rows="3" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber resize-none"></textarea>
-            <button type="submit" class="w-full bg-amber text-navy font-semibold py-2 rounded hover:bg-amberLight transition text-sm">Send Message</button>
+            <input type="text" name="first_name" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec]">
+            <input type="email" placeholder="Email" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec]">
+            <textarea placeholder="Message" required rows="3" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec] resize-none"></textarea>
+            <button type="submit" class="w-full bg-[#8dcbec] text-navy font-semibold py-2 rounded hover:bg-[#5fb3dd] transition text-sm">Send Message</button>
           </form>
         </div>
       </div>
@@ -273,9 +285,9 @@
     const cards = document.querySelectorAll('.project-card');
     filterBtns.forEach(b => {
       b.addEventListener('click', () => {
-        filterBtns.forEach(x => { x.classList.remove('bg-amber','text-navy'); x.classList.add('bg-navy','border','border-white/20','text-white'); });
-        b.classList.remove('bg-navy','border','border-white/20','text-white');
-        b.classList.add('bg-amber','text-navy');
+        filterBtns.forEach(x => { x.classList.remove('bg-[#8dcbec]','text-navy'); x.classList.add('bg-white','border','border-black/10','text-[#3e3e3e]'); });
+        b.classList.remove('bg-white','border','border-black/10','text-[#3e3e3e]');
+        b.classList.add('bg-[#8dcbec]','text-navy');
         const f = b.dataset.filter;
         cards.forEach(c => {
           c.style.display = (f === 'all' || c.dataset.category === f) ? '' : 'none';

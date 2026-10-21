@@ -14,8 +14,19 @@
   <meta property="og:locale" content="en_CA">
   <script src="https://cdn.tailwindcss.com/3.4.1"></script>
   <script>
-    tailwind.config = { theme: { extend: { colors: {
-      navy: '#0f172a', navyLight: '#1e293b', amber: '#f59e0b', amberDark: '#d97706', amberLight: '#fbbf24' } } } }
+    tailwind.config = {       theme: {
+        extend: {
+          colors: {
+            navy: '#3e3e3e',
+            navyLight: '#4a4a4a',
+            amber: '#2b8fc0',
+            amberDark: '#5fb3dd',
+            amberLight: '#8dcbec',
+            sky: '#8dcbec',
+            cream: '#F0F3BD',
+          }
+        }
+      } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -27,7 +38,7 @@
     details[open] .faq-icon { transform: rotate(180deg); }
   </style>
 </head>
-<body class="bg-navy text-white font-sans">
+<body class="bg-white text-[#3e3e3e] font-sans">
 
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
@@ -42,13 +53,13 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
             </button>
             <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
-              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-56 shadow-xl">
+              <div class="bg-white border border-black/10 rounded-lg py-2 w-56 shadow-xl">
                 <a href="residential-lighting.html" class="block px-4 py-2 text-sm text-amber">Residential Lighting</a>
-                <a href="landscape-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Landscape Lighting</a>
-                <a href="commercial-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Commercial Lighting</a>
-                <a href="deck-patio-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Deck &amp; Patio Lighting</a>
-                <a href="down-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Down Lighting</a>
-                <a href="ridge-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Ridge Lighting</a>
+                <a href="landscape-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Landscape Lighting</a>
+                <a href="commercial-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Commercial Lighting</a>
+                <a href="deck-patio-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Deck &amp; Patio Lighting</a>
+                <a href="down-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Down Lighting</a>
+                <a href="ridge-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Ridge Lighting</a>
               </div>
             </div>
           </div>
@@ -57,16 +68,16 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
             </button>
             <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
-              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-48 shadow-xl">
-                <a href="../portfolio.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Project Showcase</a>
-                <a href="../gallery.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Our Gallery</a>
-                <a href="../blog.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Blog</a>
+              <div class="bg-white border border-black/10 rounded-lg py-2 w-48 shadow-xl">
+                <a href="../portfolio.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Project Showcase</a>
+                <a href="../gallery.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Our Gallery</a>
+                <a href="../blog.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Blog</a>
               </div>
             </div>
           </div>
           <a href="../payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
           <a href="../contact.html" class="text-white hover:text-amber transition">Contact</a>
-          <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded hover:bg-amberLight transition">(778) 744-4004</a>
+          <a href="tel:7787444004" class="bg-[#8dcbec] text-navy font-semibold px-4 py-2 rounded hover:bg-[#5fb3dd] transition">(778) 744-4004</a>
         </div>
         <button id="mobileMenuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
           <span class="block w-6 h-0.5 bg-white transition-transform"></span>
@@ -92,7 +103,7 @@
         <a href="../blog.html" class="text-white hover:text-amber transition pl-3">Blog</a>
         <a href="../payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
         <a href="../contact.html" class="text-white hover:text-amber transition">Contact</a>
-        <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded text-center hover:bg-amberLight transition">(778) 744-4004</a>
+        <a href="tel:7787444004" class="bg-[#8dcbec] text-navy font-semibold px-4 py-2 rounded text-center hover:bg-[#5fb3dd] transition">(778) 744-4004</a>
       </div>
     </div>
   </nav>
@@ -101,23 +112,23 @@
   <header class="relative overflow-hidden">
     <div class="absolute inset-0">
       <img src="../images/landscape-pathway.webp" alt="Landscape pathway lighting illuminating a Vancouver Island garden walkway" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-gradient-to-br from-navy/95 via-navy/85 to-navyLight/90"></div>
+      <div class="absolute inset-0 bg-black/30"></div>
     </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 sm:py-28">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 sm:py-28 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.5)]">
       <h1 class="text-4xl sm:text-5xl font-bold mb-4">Landscape Lighting</h1>
       <p class="text-xl text-gray-300 mb-8">Elevate Your Property &bull; No Ladders &bull; No Hassle</p>
-      <a href="../contact.html" class="inline-block bg-amber text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-amberLight transition shadow-lg shadow-amber/20">Let's Talk Landscape Lighting</a>
+      <a href="../contact.html" class="inline-block bg-[#8dcbec] text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#5fb3dd] transition shadow-lg shadow-amber/20">Let's Talk Landscape Lighting</a>
     </div>
   </header>
 
   <!-- Overview -->
-  <section class="py-20 bg-navyLight">
+  <section class="py-20 bg-[#F0F3BD]">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
       <div>
         <h2 class="text-3xl font-bold mb-2">Outdoor Lighting for the Spaces You Actually Use</h2>
         <p class="text-amber mb-6">Customized Illumination for Vancouver Island Properties</p>
-        <p class="text-gray-300 mb-4">Your outdoor living areas deserve to be enjoyed after dark. Trimlight Van Isle installs customizable outdoor lighting for:</p>
-        <ul class="space-y-2 text-gray-300">
+        <p class="text-gray-600 mb-4">Your outdoor living areas deserve to be enjoyed after dark. Trimlight Van Isle installs customizable outdoor lighting for:</p>
+        <ul class="space-y-2 text-gray-600">
           <li class="flex items-start gap-2"><span class="text-amber mt-1">&#10003;</span>Landscape lighting</li>
           <li class="flex items-start gap-2"><span class="text-amber mt-1">&#10003;</span>Pathways and garden features</li>
           <li class="flex items-start gap-2"><span class="text-amber mt-1">&#10003;</span>Deck, patio, stair, and fence lighting</li>
@@ -130,84 +141,84 @@
   </section>
 
   <!-- Why homeowners love it -->
-  <section class="py-20 bg-navy">
+  <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14">
         <h2 class="text-3xl sm:text-4xl font-bold mb-4">Why Homeowners Love Trimlight for Landscape Lighting</h2>
       </div>
       <div class="grid sm:grid-cols-2 gap-6">
-        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Highlight Your Best Features</h3><p class="text-gray-400 text-sm">Draw the eye to paths, trees, and architecture with lighting placed exactly where it matters.</p></div>
-        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Cloud-Based Technology</h3><p class="text-gray-400 text-sm">Control timers, schedules, and changes remotely from anywhere, right from your phone.</p></div>
-        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Illuminate Your Outdoor Life</h3><p class="text-gray-400 text-sm">Shift from warm ambiance to bold displays in a tap. Fixtures are low-voltage, energy-efficient, and weatherproof.</p></div>
-        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Looking for a Truly Unique Solution?</h3><p class="text-gray-400 text-sm">We design custom lighting tailored to each property and its features.</p></div>
+        <div class="bg-[#F0F3BD] border border-black/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Highlight Your Best Features</h3><p class="text-gray-600 text-sm">Draw the eye to paths, trees, and architecture with lighting placed exactly where it matters.</p></div>
+        <div class="bg-[#F0F3BD] border border-black/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Cloud-Based Technology</h3><p class="text-gray-600 text-sm">Control timers, schedules, and changes remotely from anywhere, right from your phone.</p></div>
+        <div class="bg-[#F0F3BD] border border-black/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Illuminate Your Outdoor Life</h3><p class="text-gray-600 text-sm">Shift from warm ambiance to bold displays in a tap. Fixtures are low-voltage, energy-efficient, and weatherproof.</p></div>
+        <div class="bg-[#F0F3BD] border border-black/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Looking for a Truly Unique Solution?</h3><p class="text-gray-600 text-sm">We design custom lighting tailored to each property and its features.</p></div>
       </div>
-      <div class="text-center mt-10"><a href="../contact.html" class="inline-block bg-amber text-navy font-bold px-8 py-4 rounded-lg hover:bg-amberLight transition">Let's get Started</a></div>
+      <div class="text-center mt-10"><a href="../contact.html" class="inline-block bg-[#8dcbec] text-navy font-bold px-8 py-4 rounded-lg hover:bg-[#5fb3dd] transition">Let's get Started</a></div>
     </div>
   </section>
 
   <!-- Slogan + CTA -->
-  <section class="py-16 bg-navyLight">
+  <section class="py-16 bg-[#F0F3BD]">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-2xl sm:text-3xl font-bold mb-2">Celebrate Every Season</h2>
       <p class="text-xl text-amber mb-1">No Ladders</p>
       <p class="text-xl text-amber mb-6">No Hassle.</p>
-      <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Homeowners and business owners choose Trimlight for colour-changing lighting that lasts all year.</p>
+      <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Homeowners and business owners choose Trimlight for colour-changing lighting that lasts all year.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="../contact.html" class="bg-amber text-navy font-bold px-8 py-4 rounded-lg hover:bg-amberLight transition">Let's get Started</a>
-        <a href="../payment-plans.html" class="border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-lg hover:border-amber hover:text-amber transition">Financing Available</a>
+        <a href="../contact.html" class="bg-[#8dcbec] text-navy font-bold px-8 py-4 rounded-lg hover:bg-[#5fb3dd] transition">Let's get Started</a>
+        <a href="../payment-plans.html" class="border-2 border-black/10 text-[#3e3e3e] font-semibold px-8 py-4 rounded-lg hover:border-[#8dcbec] hover:text-amber transition">Financing Available</a>
       </div>
     </div>
   </section>
 
   <!-- Year-round uses -->
-  <section class="py-20 bg-navy">
+  <section class="py-20 bg-white">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-center mb-4">Permanent lighting isn't just for holidays.</h2>
-      <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">One system, countless uses throughout the year.</p>
+      <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">One system, countless uses throughout the year.</p>
       <div class="grid sm:grid-cols-2 gap-4">
-        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Everyday exterior lighting</p></div>
-        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Holidays and celebrations</p></div>
-        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Outdoor gatherings</p></div>
-        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Landscape highlights</p></div>
-        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Curb appeal and added functionality</p></div>
-        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Home and business safety, security, and visibility</p></div>
-        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">One-touch business promotions</p></div>
-        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Low-voltage design supporting sustainability goals</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-600">Everyday exterior lighting</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-600">Holidays and celebrations</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-600">Outdoor gatherings</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-600">Landscape highlights</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-600">Curb appeal and added functionality</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-600">Home and business safety, security, and visibility</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-600">One-touch business promotions</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-600">Low-voltage design supporting sustainability goals</p></div>
       </div>
-      <div class="mt-12 bg-navyLight border border-white/10 rounded-xl p-8 text-center">
+      <div class="mt-12 bg-[#F0F3BD] border border-black/10 rounded-xl p-8 text-center">
         <h3 class="text-xl font-semibold mb-3 text-amber">Backed by a Lifetime Warranty</h3>
-        <p class="text-gray-300 max-w-3xl mx-auto">A lifetime product warranty on professionally installed residential and commercial systems, plus an exclusive Vancouver Island 5-year service warranty. Ridge Lights and Landscape Lights carry their own warranty terms.</p>
+        <p class="text-gray-600 max-w-3xl mx-auto">A lifetime product warranty on professionally installed residential and commercial systems, plus an exclusive Vancouver Island 5-year service warranty. Ridge Lights and Landscape Lights carry their own warranty terms.</p>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="py-20 bg-navyLight">
+  <section class="py-20 bg-[#F0F3BD]">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
       <div class="space-y-3">
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">What is professional landscape lighting?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">A custom-installed outdoor lighting system that improves your property's appearance, visibility, and safety.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">How does landscape lighting improve curb appeal?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">It lights dark areas, reduces trip hazards, and helps deter intruders while showcasing your home.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Is landscape lighting safe for residential use?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. It uses low-voltage systems that are safe around homes, families, and pets.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Can landscape lighting help prevent accidents?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. Lighting walkways, driveways, and stairs reduces the risk of slips and falls.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Does landscape lighting increase home security?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. Better nighttime visibility makes a property less appealing to intruders.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Are outdoor lighting systems weather-resistant?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. Fixtures are built for rain, snow, and temperature changes.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Can I control my landscape lighting system?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. A cloud-based smart system lets you control it from a phone or tablet.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Will landscape lighting increase my energy costs?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">No. LED lighting is highly energy efficient and inexpensive to run.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Do I need a professional to install landscape lighting?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes, for proper wiring, voltage, and placement that lasts and performs well.</p></details>
-        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Why invest in professional landscape lighting instead of DIY?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Safer installation, better durability, and more complete coverage of your property.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">What is professional landscape lighting?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">A custom-installed outdoor lighting system that improves your property's appearance, visibility, and safety.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">How does landscape lighting improve curb appeal?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">It lights dark areas, reduces trip hazards, and helps deter intruders while showcasing your home.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Is landscape lighting safe for residential use?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">Yes. It uses low-voltage systems that are safe around homes, families, and pets.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Can landscape lighting help prevent accidents?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">Yes. Lighting walkways, driveways, and stairs reduces the risk of slips and falls.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Does landscape lighting increase home security?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">Yes. Better nighttime visibility makes a property less appealing to intruders.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Are outdoor lighting systems weather-resistant?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">Yes. Fixtures are built for rain, snow, and temperature changes.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Can I control my landscape lighting system?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">Yes. A cloud-based smart system lets you control it from a phone or tablet.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Will landscape lighting increase my energy costs?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">No. LED lighting is highly energy efficient and inexpensive to run.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Do I need a professional to install landscape lighting?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">Yes, for proper wiring, voltage, and placement that lasts and performs well.</p></details>
+        <details class="bg-white border border-black/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Why invest in professional landscape lighting instead of DIY?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 mt-3 text-sm">Safer installation, better durability, and more complete coverage of your property.</p></details>
       </div>
-      <div class="text-center mt-10"><a href="../contact.html" class="inline-block bg-amber text-navy font-bold px-8 py-4 rounded-lg hover:bg-amberLight transition">Contact Us Today</a></div>
+      <div class="text-center mt-10"><a href="../contact.html" class="inline-block bg-[#8dcbec] text-navy font-bold px-8 py-4 rounded-lg hover:bg-[#5fb3dd] transition">Contact Us Today</a></div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="py-16 bg-gradient-to-r from-amber to-amberDark">
+  <section class="py-16 bg-gradient-to-r from-[#8dcbec] to-[#5fb3dd]">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Ready to Light Up Your Home?</h2>
       <p class="text-navy/80 text-lg mb-8">Get a free, no-obligation quote for permanent residential LED lighting.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="../contact.html" class="bg-navy text-white font-bold px-8 py-4 rounded-lg hover:bg-navyLight transition">Get Your Free Quote</a>
+        <a href="../contact.html" class="bg-white text-[#3e3e3e] font-bold px-8 py-4 rounded-lg hover:bg-[#F0F3BD] transition">Get Your Free Quote</a>
         <a href="tel:7787444004" class="bg-white/20 text-navy font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition">(778) 744-4004</a>
       </div>
     </div>
@@ -250,11 +261,11 @@
         <div>
           <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
           <form class="space-y-3" action="https://formsubmit.co/info@trimlightvanisle.ca" method="POST">
-            <input type="text" name="first_name" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
-            <input type="email" name="email" placeholder="Email" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
-            <input type="tel" name="phone" placeholder="Phone" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
-            <textarea name="message" placeholder="Message" required rows="3" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber resize-none"></textarea>
-            <button type="submit" class="w-full bg-amber text-navy font-semibold py-2 rounded hover:bg-amberLight transition text-sm">Submit</button>
+            <input type="text" name="first_name" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec]">
+            <input type="email" name="email" placeholder="Email" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec]">
+            <input type="tel" name="phone" placeholder="Phone" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec]">
+            <textarea name="message" placeholder="Message" required rows="3" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec] resize-none"></textarea>
+            <button type="submit" class="w-full bg-[#8dcbec] text-navy font-semibold py-2 rounded hover:bg-[#5fb3dd] transition text-sm">Submit</button>
           </form>
         </div>
       </div>

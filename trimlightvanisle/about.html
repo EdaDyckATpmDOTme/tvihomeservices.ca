@@ -15,14 +15,16 @@
   <script src="https://cdn.tailwindcss.com/3.4.1"></script>
   <script>
     tailwind.config = {
-      theme: {
+            theme: {
         extend: {
           colors: {
-            navy: '#0f172a',
-            navyLight: '#1e293b',
-            amber: '#f59e0b',
-            amberDark: '#d97706',
-            amberLight: '#fbbf24',
+            navy: '#3e3e3e',
+            navyLight: '#4a4a4a',
+            amber: '#2b8fc0',
+            amberDark: '#5fb3dd',
+            amberLight: '#8dcbec',
+            sky: '#8dcbec',
+            cream: '#F0F3BD',
           }
         }
       }
@@ -35,7 +37,7 @@
     .hamburger-active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
   </style>
 </head>
-<body class="bg-navy text-white font-sans">
+<body class="bg-white text-[#3e3e3e] font-sans">
 
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
@@ -50,13 +52,13 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
             </button>
             <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
-              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-56 shadow-xl">
-                <a href="services/residential-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Residential Lighting</a>
-                <a href="services/landscape-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Landscape Lighting</a>
-                <a href="services/commercial-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Commercial Lighting</a>
-                <a href="services/deck-patio-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Deck &amp; Patio Lighting</a>
-                <a href="services/down-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Down Lighting</a>
-                <a href="services/ridge-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Ridge Lighting</a>
+              <div class="bg-white border border-black/10 rounded-lg py-2 w-56 shadow-xl">
+                <a href="services/residential-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Residential Lighting</a>
+                <a href="services/landscape-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Landscape Lighting</a>
+                <a href="services/commercial-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Commercial Lighting</a>
+                <a href="services/deck-patio-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Deck &amp; Patio Lighting</a>
+                <a href="services/down-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Down Lighting</a>
+                <a href="services/ridge-lighting.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Ridge Lighting</a>
               </div>
             </div>
           </div>
@@ -65,16 +67,16 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
             </button>
             <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
-              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-48 shadow-xl">
-                <a href="portfolio.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Project Showcase</a>
-                <a href="gallery.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Our Gallery</a>
-                <a href="blog.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Blog</a>
+              <div class="bg-white border border-black/10 rounded-lg py-2 w-48 shadow-xl">
+                <a href="portfolio.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Project Showcase</a>
+                <a href="gallery.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Our Gallery</a>
+                <a href="blog.html" class="block px-4 py-2 text-sm text-[#3e3e3e] hover:text-[#2b8fc0] hover:bg-[#F0F3BD] transition">Blog</a>
               </div>
             </div>
           </div>
           <a href="payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
           <a href="contact.html" class="text-white hover:text-amber transition">Contact</a>
-          <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded hover:bg-amberLight transition">(778) 744-4004</a>
+          <a href="tel:7787444004" class="bg-[#8dcbec] text-navy font-semibold px-4 py-2 rounded hover:bg-[#5fb3dd] transition">(778) 744-4004</a>
         </div>
         <button id="mobileMenuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
           <span class="block w-6 h-0.5 bg-white transition-transform"></span>
@@ -100,15 +102,15 @@
         <a href="blog.html" class="text-white hover:text-amber transition pl-3">Blog</a>
         <a href="payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
         <a href="contact.html" class="text-white hover:text-amber transition">Contact</a>
-        <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded text-center hover:bg-amberLight transition">(778) 744-4004</a>
+        <a href="tel:7787444004" class="bg-[#8dcbec] text-navy font-semibold px-4 py-2 rounded text-center hover:bg-[#5fb3dd] transition">(778) 744-4004</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="relative bg-gradient-to-br from-navy via-navyLight to-navy py-20 overflow-hidden">
+  <header class="relative bg-gradient-to-br from-[#8dcbec] to-[#5fb3dd] py-20 overflow-hidden">
     <div class="absolute inset-0 opacity-20">
-      <div class="absolute top-10 right-20 w-72 h-72 bg-amber/30 rounded-full blur-3xl"></div>
+      <div class="absolute top-10 right-20 w-72 h-72 bg-[#8dcbec]/40 rounded-full blur-3xl"></div>
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-amber font-semibold uppercase tracking-widest mb-4">Our Story</p>
@@ -118,62 +120,62 @@
   </header>
 
   <!-- Our Story -->
-  <section class="py-20 bg-navyLight">
+  <section class="py-20 bg-[#F0F3BD]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="text-3xl font-bold mb-6">How It All Started</h2>
-          <p class="text-gray-300 mb-4">Trimlight Van Isle Inc. was founded in 2021 by Herman and Shannon Smelt. What began as a shared passion for helping people and building community has grown into Vancouver Island's trusted name in permanent LED lighting.</p>
-          <p class="text-gray-300 mb-4">Starting with programmable lighting systems, the company has expanded into residential, commercial, landscape, temporary, and custom property lighting. Every installation is designed to be attractive, long-lasting, and tailored to each client's vision.</p>
-          <p class="text-gray-300">Based in the Cowichan Valley, we serve families and businesses across Vancouver Island, from Ladysmith to Sooke, Sidney to Nanaimo, and the Gulf Islands. Our mission is simple: help Vancouver Island families and businesses mark life's moments with safe, low-effort permanent lighting, while strengthening local communities.</p>
+          <p class="text-gray-600 mb-4">Trimlight Van Isle Inc. was founded in 2021 by Herman and Shannon Smelt. What began as a shared passion for helping people and building community has grown into Vancouver Island's trusted name in permanent LED lighting.</p>
+          <p class="text-gray-600 mb-4">Starting with programmable lighting systems, the company has expanded into residential, commercial, landscape, temporary, and custom property lighting. Every installation is designed to be attractive, long-lasting, and tailored to each client's vision.</p>
+          <p class="text-gray-600">Based in the Cowichan Valley, we serve families and businesses across Vancouver Island, from Ladysmith to Sooke, Sidney to Nanaimo, and the Gulf Islands. Our mission is simple: help Vancouver Island families and businesses mark life's moments with safe, low-effort permanent lighting, while strengthening local communities.</p>
         </div>
-        <div class="bg-navy/60 border border-white/10 rounded-xl p-8">
+        <div class="bg-white/60 border border-black/10 rounded-xl p-8">
           <img src="images/herman-shannon.webp" alt="Herman and Shannon Smelt, founders of Trimlight Van Isle" class="w-full h-80 object-cover rounded-lg">
-          <p class="text-center text-gray-500 text-sm mt-4">Herman &amp; Shannon Smelt &mdash; Founders, Trimlight Van Isle</p>
+          <p class="text-center text-gray-600 text-sm mt-4">Herman &amp; Shannon Smelt &mdash; Founders, Trimlight Van Isle</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Values -->
-  <section class="py-20 bg-navy">
+  <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl sm:text-4xl font-bold mb-4">Our Values</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto">Every installation reflects our commitment to quality, service, and the communities we serve.</p>
+        <p class="text-gray-600 max-w-2xl mx-auto">Every installation reflects our commitment to quality, service, and the communities we serve.</p>
       </div>
       <div class="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-        <div class="bg-navyLight border border-white/10 rounded-xl p-8">
-          <div class="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center mb-5">
+        <div class="bg-[#F0F3BD] border border-black/10 rounded-xl p-8">
+          <div class="w-12 h-12 bg-[#8dcbec]/20 rounded-lg flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11.42 15.17l-5.1-5.1m0 0L12 4.37m-5.68 5.7h15.08"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-3">Local Professional Installation</h3>
-          <p class="text-gray-400">Our trade technicians install each system and show you how to use it. You never need to climb a ladder or string up lights yourself again.</p>
+          <p class="text-gray-600">Our trade technicians install each system and show you how to use it. You never need to climb a ladder or string up lights yourself again.</p>
         </div>
 
-        <div class="bg-navyLight border border-white/10 rounded-xl p-8">
-          <div class="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center mb-5">
+        <div class="bg-[#F0F3BD] border border-black/10 rounded-xl p-8">
+          <div class="w-12 h-12 bg-[#8dcbec]/20 rounded-lg flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-3">Lifetime Warranty</h3>
-          <p class="text-gray-400">Trimlight offers a lifetime product warranty, and we add our exclusive 5-year service warranty for all Vancouver Island customers. Your investment is protected.</p>
+          <p class="text-gray-600">Trimlight offers a lifetime product warranty, and we add our exclusive 5-year service warranty for all Vancouver Island customers. Your investment is protected.</p>
         </div>
 
-        <div class="bg-navyLight border border-white/10 rounded-xl p-8">
-          <div class="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center mb-5">
+        <div class="bg-[#F0F3BD] border border-black/10 rounded-xl p-8">
+          <div class="w-12 h-12 bg-[#8dcbec]/20 rounded-lg flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-3">Customer Service</h3>
-          <p class="text-gray-400">We emphasize communication and tailor every design to your vision. From the initial consultation through installation and beyond, we are here for you.</p>
+          <p class="text-gray-600">We emphasize communication and tailor every design to your vision. From the initial consultation through installation and beyond, we are here for you.</p>
         </div>
 
-        <div class="bg-navyLight border border-white/10 rounded-xl p-8">
-          <div class="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center mb-5">
+        <div class="bg-[#F0F3BD] border border-black/10 rounded-xl p-8">
+          <div class="w-12 h-12 bg-[#8dcbec]/20 rounded-lg flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-3">Quality Design</h3>
-          <p class="text-gray-400">Every installation is crafted to be attractive, long-lasting, and respectful of your property. We treat your home or business as if it were our own.</p>
+          <p class="text-gray-600">Every installation is crafted to be attractive, long-lasting, and respectful of your property. We treat your home or business as if it were our own.</p>
         </div>
 
       </div>
@@ -181,49 +183,49 @@
   </section>
 
   <!-- TVI Home Services Division -->
-  <section class="py-20 bg-navyLight">
+  <section class="py-20 bg-[#F0F3BD]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-6">TVI Home Services</h2>
-        <p class="text-gray-300 mb-6">Through our division, TVI Home Services, we also help Vancouver Island homeowners and businesses maintain their properties with a full range of exterior cleaning and restoration services.</p>
+        <p class="text-gray-600 mb-6">Through our division, TVI Home Services, we also help Vancouver Island homeowners and businesses maintain their properties with a full range of exterior cleaning and restoration services.</p>
         <div class="grid sm:grid-cols-2 gap-4 mb-8 text-left max-w-lg mx-auto">
           <div class="flex items-center gap-3">
             <svg class="w-5 h-5 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-300">Window Cleaning</span>
+            <span class="text-gray-600">Window Cleaning</span>
           </div>
           <div class="flex items-center gap-3">
             <svg class="w-5 h-5 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-300">Pressure Washing</span>
+            <span class="text-gray-600">Pressure Washing</span>
           </div>
           <div class="flex items-center gap-3">
             <svg class="w-5 h-5 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-300">Roof Treatments</span>
+            <span class="text-gray-600">Roof Treatments</span>
           </div>
           <div class="flex items-center gap-3">
             <svg class="w-5 h-5 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-300">Soft Washing</span>
+            <span class="text-gray-600">Soft Washing</span>
           </div>
           <div class="flex items-center gap-3">
             <svg class="w-5 h-5 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-300">Gutter Cleaning</span>
+            <span class="text-gray-600">Gutter Cleaning</span>
           </div>
           <div class="flex items-center gap-3">
             <svg class="w-5 h-5 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            <span class="text-gray-300">Property Restoration</span>
+            <span class="text-gray-600">Property Restoration</span>
           </div>
         </div>
-        <a href="https://tvihomeservices.ca" class="inline-block bg-amber text-navy font-semibold px-6 py-3 rounded-lg hover:bg-amberLight transition">Visit TVI Home Services</a>
+        <a href="https://tvihomeservices.ca" class="inline-block bg-[#8dcbec] text-navy font-semibold px-6 py-3 rounded-lg hover:bg-[#5fb3dd] transition">Visit TVI Home Services</a>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 bg-gradient-to-r from-amber to-amberDark">
+  <section class="py-16 bg-gradient-to-r from-[#8dcbec] to-[#5fb3dd]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Ready to Work With Us?</h2>
       <p class="text-navy/80 text-lg mb-8">Get in touch for a free consultation. We would love to hear about your project.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="contact.html" class="bg-navy text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-navyLight transition">Contact Us</a>
+        <a href="contact.html" class="bg-white text-[#3e3e3e] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#F0F3BD] transition">Contact Us</a>
         <a href="tel:7787444004" class="bg-white/20 text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-white/30 transition">(778) 744-4004</a>
       </div>
     </div>
@@ -275,10 +277,10 @@
         <div>
           <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
           <form class="space-y-3" action="https://formsubmit.co/info@trimlightvanisle.ca" method="POST">
-            <input type="text" name="first_name" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
-            <input type="email" placeholder="Email" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
-            <textarea placeholder="Message" required rows="3" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber resize-none"></textarea>
-            <button type="submit" class="w-full bg-amber text-navy font-semibold py-2 rounded hover:bg-amberLight transition text-sm">Send Message</button>
+            <input type="text" name="first_name" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec]">
+            <input type="email" placeholder="Email" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec]">
+            <textarea placeholder="Message" required rows="3" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#8dcbec] resize-none"></textarea>
+            <button type="submit" class="w-full bg-[#8dcbec] text-navy font-semibold py-2 rounded hover:bg-[#5fb3dd] transition text-sm">Send Message</button>
           </form>
         </div>
       </div>
