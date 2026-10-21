@@ -86,8 +86,33 @@
         <div class="hidden md:flex items-center gap-6">
           <a href="index.html" class="text-white hover:text-amber transition">Home</a>
           <a href="about.html" class="text-white hover:text-amber transition">About</a>
-          <a href="portfolio.html" class="text-white hover:text-amber transition">Portfolio</a>
-          <a href="gallery.html" class="text-white hover:text-amber transition">Gallery</a>
+          <div class="relative group">
+            <button class="text-white hover:text-amber transition flex items-center gap-1">Our Lighting Services
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
+              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-56 shadow-xl">
+                <a href="services/residential-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Residential Lighting</a>
+                <a href="services/landscape-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Landscape Lighting</a>
+                <a href="services/commercial-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Commercial Lighting</a>
+                <a href="services/deck-patio-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Deck &amp; Patio Lighting</a>
+                <a href="services/down-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Down Lighting</a>
+                <a href="services/ridge-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Ridge Lighting</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <button class="text-white hover:text-amber transition flex items-center gap-1">Showcase
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
+              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-48 shadow-xl">
+                <a href="portfolio.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Project Showcase</a>
+                <a href="gallery.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Our Gallery</a>
+                <a href="blog.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Blog</a>
+              </div>
+            </div>
+          </div>
           <a href="payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
           <a href="contact.html" class="text-white hover:text-amber transition">Contact</a>
           <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded hover:bg-amberLight transition">(778) 744-4004</a>
@@ -103,8 +128,17 @@
       <div class="px-4 py-4 flex flex-col gap-3">
         <a href="index.html" class="text-white hover:text-amber transition">Home</a>
         <a href="about.html" class="text-white hover:text-amber transition">About</a>
-        <a href="portfolio.html" class="text-white hover:text-amber transition">Portfolio</a>
-        <a href="gallery.html" class="text-white hover:text-amber transition">Gallery</a>
+        <p class="text-amber text-sm uppercase tracking-wide pt-2">Our Lighting Services</p>
+        <a href="services/residential-lighting.html" class="text-white hover:text-amber transition pl-3">Residential Lighting</a>
+        <a href="services/landscape-lighting.html" class="text-white hover:text-amber transition pl-3">Landscape Lighting</a>
+        <a href="services/commercial-lighting.html" class="text-white hover:text-amber transition pl-3">Commercial Lighting</a>
+        <a href="services/deck-patio-lighting.html" class="text-white hover:text-amber transition pl-3">Deck &amp; Patio Lighting</a>
+        <a href="services/down-lighting.html" class="text-white hover:text-amber transition pl-3">Down Lighting</a>
+        <a href="services/ridge-lighting.html" class="text-white hover:text-amber transition pl-3">Ridge Lighting</a>
+        <p class="text-amber text-sm uppercase tracking-wide pt-2">Showcase</p>
+        <a href="portfolio.html" class="text-white hover:text-amber transition pl-3">Project Showcase</a>
+        <a href="gallery.html" class="text-white hover:text-amber transition pl-3">Our Gallery</a>
+        <a href="blog.html" class="text-white hover:text-amber transition pl-3">Blog</a>
         <a href="payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
         <a href="contact.html" class="text-white hover:text-amber transition">Contact</a>
         <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded text-center hover:bg-amberLight transition">(778) 744-4004</a>
@@ -119,31 +153,49 @@
       <div class="absolute inset-0 bg-gradient-to-br from-navy/95 via-navy/85 to-navyLight/90"></div>
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 sm:py-32">
-      <p class="text-amber font-semibold uppercase tracking-widest mb-4">Vancouver Island&rsquo;s Permanent Lighting Experts</p>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Elevate Your Property</h1>
-      <p class="text-xl sm:text-2xl text-gray-300 mb-2">No Ladders &bull; No Hassle</p>
-      <p class="text-lg text-gray-200 mb-10 max-w-2xl mx-auto">Permanent, customizable LED lighting installed once and enjoyed year-round. Control colours and patterns from your phone.</p>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Beautiful Customizable Lighting</h1>
+      <p class="text-xl sm:text-2xl text-amber mb-4 font-semibold">Celebrate Every Season &bull; No Ladders &bull; No Hassle</p>
+      <p class="text-lg text-gray-200 mb-10 max-w-2xl mx-auto">Proudly serving Vancouver Island from our home base in the Cowichan Valley.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="contact.html" class="bg-amber text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-amberLight transition shadow-lg shadow-amber/20">Get a Free Quote</a>
-        <a href="portfolio.html" class="border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-lg text-lg hover:border-amber hover:text-amber transition">View Our Work</a>
+        <a href="contact.html" class="bg-amber text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-amberLight transition shadow-lg shadow-amber/20">Contact Us</a>
+        <a href="#services" class="border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-lg text-lg hover:border-amber hover:text-amber transition">Browse Our Lighting Options</a>
       </div>
     </div>
   </header>
+
+  <!-- What Makes Us Different -->
+  <section class="py-20 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">What makes us different</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><p class="text-gray-200">Lifetime product warranty with local service support</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><p class="text-gray-200">Custom lighting solutions for every property</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><p class="text-gray-200">Professional installation by trained specialists</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><p class="text-gray-200">Lighting designed to be subtle by day &ndash; spectacular by night</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><p class="text-gray-200">Safety First, we go up the ladder so you don&rsquo;t have to.</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><p class="text-gray-200">Fully programmable colours and patterns</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><p class="text-gray-200">Energy-efficient, low-voltage LED technology</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><p class="text-gray-200">App-controlled lighting from anywhere</p></div>
+      </div>
+    </div>
+  </section>
 
   <!-- Services Grid -->
   <section class="py-20 bg-navyLight" id="services">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Our Lighting Services</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto">From subtle architectural accents to vibrant holiday displays, we design and install lighting solutions tailored to your property.</p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Elevate your Exterior without lifting a finger.</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">Accent lighting adds a warm glow that highlights your property&rsquo;s architectural details every night of the year &mdash; no temporary lights, no ladders, no hassle.</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <div class="bg-navy/60 border border-white/10 rounded-xl overflow-hidden hover:border-amber/50 transition group">
-          <img src="images/residential-1.webp" alt="Residential permanent LED roofline lighting on a Vancouver Island home" class="w-full h-48 object-cover" loading="lazy">
+          <img src="images/globe-lights.webp" alt="Seasonal string and globe lighting for a Vancouver Island celebration" class="w-full h-48 object-cover" loading="lazy">
           <div class="p-8">
-            <h3 class="text-xl font-semibold mb-3">Residential Lighting</h3>
-            <p class="text-gray-400">Permanent LED lighting that transforms your home. Accent your rooflines, eaves, and architectural features with customizable colours and patterns controlled from your phone.</p>
+            <h3 class="text-xl font-semibold mb-3">Seasonal Lighting</h3>
+            <p class="text-gray-400">From Christmas and Halloween to weddings and family reunions, set the perfect scene for any occasion. Change colours and patterns from your phone, or let us design a display for your event.</p>
           </div>
         </div>
 
@@ -181,10 +233,10 @@
 
         <div class="bg-navy/60 border border-white/10 rounded-xl p-8 hover:border-amber/50 transition group">
           <div class="w-14 h-14 bg-amber/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber/20 transition">
-            <svg class="w-7 h-7 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <svg class="w-7 h-7 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3">Commercial Lighting</h3>
-          <p class="text-gray-400">Make your business stand out with permanent LED lighting. Attract customers, enhance your brand presence, and improve security with professional commercial installations.</p>
+          <h3 class="text-xl font-semibold mb-3">Wedding &amp; Event Lighting</h3>
+          <p class="text-gray-400">Make your special day unforgettable. Custom lighting for weddings, receptions, and events across Vancouver Island, designed and installed to suit your venue and vision.</p>
         </div>
 
       </div>
@@ -236,12 +288,46 @@
     </div>
   </section>
 
+  <!-- Permanent lighting isn't just for holidays -->
+  <section class="py-20 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Permanent lighting isn&rsquo;t just for holidays.</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">One system, endless uses &mdash; all year round.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6 text-center"><p class="text-gray-200">Everyday exterior lighting</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6 text-center"><p class="text-gray-200">Celebrations and holidays</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6 text-center"><p class="text-gray-200">Outdoor gatherings</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6 text-center"><p class="text-gray-200">Landscape highlights</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6 text-center"><p class="text-gray-200">Added curb appeal and increased functionality</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6 text-center"><p class="text-gray-200">Home and Business safety, security and visibility</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6 text-center"><p class="text-gray-200">Business promotions at the touch of a button</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6 text-center"><p class="text-gray-200">Meeting sustainability targets with low-voltage technology</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Teaser -->
+  <section class="relative py-24 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="images/accent-lighting.webp" alt="Accent lighting highlighting a home exterior at night" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-navy/80"></div>
+    </div>
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">CREATIVE LIGHTING TO INSPIRE</h2>
+      <p class="text-gray-200 text-lg mb-8">Curious what your home or space could look like? Our gallery&rsquo;s full of ideas.</p>
+      <a href="gallery.html" class="inline-block bg-amber text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-amberLight transition">View Our Gallery</a>
+    </div>
+  </section>
+
   <!-- Service Area -->
   <section class="py-20 bg-navyLight">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-bold mb-6">Serving Vancouver Island</h2>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-6">Proudly Serving Vancouver Island as Your Year-Round Lighting Specialists</h2>
+          <p class="text-amber font-semibold mb-6">From Ladysmith to the Malahat, Sooke to Sidney, Nanaimo, Gulf Islands &amp; more!</p>
           <p class="text-gray-400 mb-8">Based in the Cowichan Valley, we provide professional LED lighting installation across Vancouver Island. Our service area stretches from Ladysmith to Sooke, and from Sidney to Nanaimo, including the Gulf Islands.</p>
           <div class="grid grid-cols-2 gap-4">
             <div class="flex items-center gap-2"><svg class="w-5 h-5 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Cowichan Valley</span></div>
@@ -335,12 +421,12 @@
         <div>
           <h3 class="text-white font-semibold mb-4">Services</h3>
           <ul class="space-y-2 text-sm">
-            <li><a href="index.html#services" class="text-gray-400 hover:text-amber transition">Residential Lighting</a></li>
-            <li><a href="index.html#services" class="text-gray-400 hover:text-amber transition">Landscape Lighting</a></li>
-            <li><a href="index.html#services" class="text-gray-400 hover:text-amber transition">Ridge Lighting</a></li>
-            <li><a href="index.html#services" class="text-gray-400 hover:text-amber transition">Down Lighting</a></li>
-            <li><a href="index.html#services" class="text-gray-400 hover:text-amber transition">Deck &amp; Patio</a></li>
-            <li><a href="index.html#services" class="text-gray-400 hover:text-amber transition">Commercial Lighting</a></li>
+            <li><a href="services/residential-lighting.html" class="text-gray-400 hover:text-amber transition">Residential Lighting</a></li>
+            <li><a href="services/landscape-lighting.html" class="text-gray-400 hover:text-amber transition">Landscape Lighting</a></li>
+            <li><a href="services/ridge-lighting.html" class="text-gray-400 hover:text-amber transition">Ridge Lighting</a></li>
+            <li><a href="services/down-lighting.html" class="text-gray-400 hover:text-amber transition">Down Lighting</a></li>
+            <li><a href="services/deck-patio-lighting.html" class="text-gray-400 hover:text-amber transition">Deck &amp; Patio</a></li>
+            <li><a href="services/commercial-lighting.html" class="text-gray-400 hover:text-amber transition">Commercial Lighting</a></li>
           </ul>
         </div>
         <div>

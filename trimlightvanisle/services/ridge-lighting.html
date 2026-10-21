@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridge Lighting | Trimlight Van Isle | Vancouver Island, BC</title>
+  <meta name="description" content="Permanent ridge lighting for Vancouver Island homes. Outline your roof peaks with clean architectural LED lighting. Weather-sealed, app-controlled. Call (778) 744-4004.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://trimlightvanisle.ca/ridge-lighting">
+  <meta property="og:title" content="Ridge Lighting | Trimlight Van Isle">
+  <meta property="og:description" content="Permanent ridge lighting for Vancouver Island homes. A clean architectural glow that outlines your roofline day and night.">
+  <meta property="og:url" content="https://trimlightvanisle.ca/ridge-lighting">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_CA">
+  <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      navy: '#0f172a', navyLight: '#1e293b', amber: '#f59e0b', amberDark: '#d97706', amberLight: '#fbbf24' } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hamburger-active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger-active span:nth-child(2) { opacity: 0; }
+    .hamburger-active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .faq-icon { transform: rotate(180deg); }
+  </style>
+</head>
+<body class="bg-navy text-white font-sans">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="../index.html" class="flex items-center"><img src="../images/logo-white.webp" alt="Trimlight Van Isle" class="h-9"></a>
+        <div class="hidden md:flex items-center gap-6">
+          <a href="../index.html" class="text-white hover:text-amber transition">Home</a>
+          <a href="../about.html" class="text-white hover:text-amber transition">About</a>
+          <div class="relative group">
+            <button class="text-white hover:text-amber transition flex items-center gap-1">Our Lighting Services
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
+              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-56 shadow-xl">
+                <a href="residential-lighting.html" class="block px-4 py-2 text-sm text-amber">Residential Lighting</a>
+                <a href="landscape-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Landscape Lighting</a>
+                <a href="commercial-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Commercial Lighting</a>
+                <a href="deck-patio-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Deck &amp; Patio Lighting</a>
+                <a href="down-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Down Lighting</a>
+                <a href="ridge-lighting.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Ridge Lighting</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <button class="text-white hover:text-amber transition flex items-center gap-1">Showcase
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
+              <div class="bg-navyLight border border-white/10 rounded-lg py-2 w-48 shadow-xl">
+                <a href="../portfolio.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Project Showcase</a>
+                <a href="../gallery.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Our Gallery</a>
+                <a href="../blog.html" class="block px-4 py-2 text-sm text-white hover:text-amber hover:bg-navy transition">Blog</a>
+              </div>
+            </div>
+          </div>
+          <a href="../payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
+          <a href="../contact.html" class="text-white hover:text-amber transition">Contact</a>
+          <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded hover:bg-amberLight transition">(778) 744-4004</a>
+        </div>
+        <button id="mobileMenuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span class="block w-6 h-0.5 bg-white transition-transform"></span>
+          <span class="block w-6 h-0.5 bg-white transition-opacity"></span>
+          <span class="block w-6 h-0.5 bg-white transition-transform"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-navyLight border-t border-white/10">
+      <div class="px-4 py-4 flex flex-col gap-3">
+        <a href="../index.html" class="text-white hover:text-amber transition">Home</a>
+        <a href="../about.html" class="text-white hover:text-amber transition">About</a>
+        <p class="text-amber text-sm uppercase tracking-wide pt-2">Our Lighting Services</p>
+        <a href="residential-lighting.html" class="text-white hover:text-amber transition pl-3">Residential Lighting</a>
+        <a href="landscape-lighting.html" class="text-white hover:text-amber transition pl-3">Landscape Lighting</a>
+        <a href="commercial-lighting.html" class="text-white hover:text-amber transition pl-3">Commercial Lighting</a>
+        <a href="deck-patio-lighting.html" class="text-white hover:text-amber transition pl-3">Deck &amp; Patio Lighting</a>
+        <a href="down-lighting.html" class="text-white hover:text-amber transition pl-3">Down Lighting</a>
+        <a href="ridge-lighting.html" class="text-white hover:text-amber transition pl-3">Ridge Lighting</a>
+        <p class="text-amber text-sm uppercase tracking-wide pt-2">Showcase</p>
+        <a href="../portfolio.html" class="text-white hover:text-amber transition pl-3">Project Showcase</a>
+        <a href="../gallery.html" class="text-white hover:text-amber transition pl-3">Our Gallery</a>
+        <a href="../blog.html" class="text-white hover:text-amber transition pl-3">Blog</a>
+        <a href="../payment-plans.html" class="text-white hover:text-amber transition">Payment Plans</a>
+        <a href="../contact.html" class="text-white hover:text-amber transition">Contact</a>
+        <a href="tel:7787444004" class="bg-amber text-navy font-semibold px-4 py-2 rounded text-center hover:bg-amberLight transition">(778) 744-4004</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="../images/ridge-lighting.webp" alt="Ridge lighting outlining the roof peaks of a Vancouver Island home" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-br from-navy/95 via-navy/85 to-navyLight/90"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 sm:py-28">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Ridge Lighting</h1>
+      <p class="text-xl text-gray-300 mb-8">Accentuate Your Roof Lines &bull; No Ladders &bull; No Hassle</p>
+      <a href="../contact.html" class="inline-block bg-amber text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-amberLight transition shadow-lg shadow-amber/20">Let's Talk Roof Ridge Lighting</a>
+    </div>
+  </header>
+
+  <!-- Overview -->
+  <section class="py-20 bg-navyLight">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Add Elegance to Your Property</h2>
+        <p class="text-gray-300 mb-4">Ridge lighting adds a clean, architectural glow that outlines your home's shape, improving curb appeal and nighttime visibility.</p>
+        <p class="text-gray-400">Installed with sealant, fasteners, and approved materials designed to keep water out, the system attaches to your roof ridges and blends into the roofline &mdash; low-profile by day, bright LEDs at night.</p>
+      </div>
+      <img src="../images/ridge-lighting.webp" alt="Ridge Lighting project in Victoria, BC" class="rounded-xl w-full h-80 object-cover">
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section class="py-20 bg-navy">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Stand Out with Ridge Lights</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Clean Architectural Glow</h3><p class="text-gray-400 text-sm">Outlines the shape of your home for a striking silhouette.</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Improved Curb Appeal</h3><p class="text-gray-400 text-sm">Boosts curb appeal and nighttime visibility.</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Weather-Sealed Install</h3><p class="text-gray-400 text-sm">Sealant, fasteners, and approved materials are used to keep water out.</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Blends Into the Roofline</h3><p class="text-gray-400 text-sm">Attaches to roof ridges and stays discreet by day.</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">Bright LEDs at Night</h3><p class="text-gray-400 text-sm">Low-profile during daylight, vivid and customizable after dark.</p></div>
+        <div class="bg-navyLight border border-white/10 rounded-xl p-6"><h3 class="font-semibold text-lg mb-2 text-amber">App-Controlled</h3><p class="text-gray-400 text-sm">Change colours and patterns for any season from your phone.</p></div>
+      </div>
+      <div class="text-center mt-10"><a href="../contact.html" class="inline-block bg-amber text-navy font-bold px-8 py-4 rounded-lg hover:bg-amberLight transition">Let's get Started</a></div>
+    </div>
+  </section>
+
+  <!-- Slogan + CTA -->
+  <section class="py-16 bg-navyLight">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-2">Celebrate Every Season</h2>
+      <p class="text-xl text-amber mb-1">No Ladders</p>
+      <p class="text-xl text-amber mb-6">No Hassle.</p>
+      <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Homeowners and business owners choose Trimlight for colour-changing lighting that lasts all year.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="../contact.html" class="bg-amber text-navy font-bold px-8 py-4 rounded-lg hover:bg-amberLight transition">Let's get Started</a>
+        <a href="../payment-plans.html" class="border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-lg hover:border-amber hover:text-amber transition">Financing Available</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Year-round uses -->
+  <section class="py-20 bg-navy">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-4">Permanent lighting isn't just for holidays.</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">One system, countless uses throughout the year.</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Everyday exterior lighting</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Holidays and celebrations</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Outdoor gatherings</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Landscape highlights</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Curb appeal and added functionality</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Home and business safety, security, and visibility</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">One-touch business promotions</p></div>
+        <div class="flex items-start gap-3"><span class="text-amber mt-1">&#10003;</span><p class="text-gray-300">Low-voltage design supporting sustainability goals</p></div>
+      </div>
+      <div class="mt-12 bg-navyLight border border-white/10 rounded-xl p-8 text-center">
+        <h3 class="text-xl font-semibold mb-3 text-amber">Backed by a Lifetime Warranty</h3>
+        <p class="text-gray-300 max-w-3xl mx-auto">A lifetime product warranty on professionally installed residential and commercial systems, plus an exclusive Vancouver Island 5-year service warranty. Ridge Lights and Landscape Lights carry their own warranty terms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-navyLight">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-3">
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">What is Trimlight ridge lighting?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Permanent LED lighting installed along your roof ridges to outline your home's shape with a clean architectural glow.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">How does ridge lighting work?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">LEDs attach to the roof ridges and connect to a controller and app for colours, patterns, and schedules.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Can ridge lighting improve my home's curb appeal?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. The outlined roofline creates a dramatic, finished look.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Is Trimlight ridge lighting safe for residential use?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. It is low-voltage and professionally installed with weather-sealed materials.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Can I change the colours for seasonal events?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. Set any colour or pattern for holidays and events from the app.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Does ridge lighting improve nighttime visibility and safety?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. A lit roofline improves visibility and presence at night.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Are Trimlight ridge lights weather-resistant?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">Yes. They are sealed and built for Vancouver Island weather.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Will ridge lighting increase energy costs?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">No. Low-voltage LEDs are highly energy efficient.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Are ridge lights visible during the day?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">They are low-profile and blend into the roofline during the day.</p></details>
+        <details class="bg-navy border border-white/10 rounded-lg p-5"><summary class="flex justify-between items-center font-semibold">Why choose Trimlight ridge lighting for your home?<svg class="faq-icon w-5 h-5 text-amber transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-400 mt-3 text-sm">A permanent, weather-sealed solution backed by a lifetime product warranty and local Vancouver Island service.</p></details>
+      </div>
+      <div class="text-center mt-10"><a href="../contact.html" class="inline-block bg-amber text-navy font-bold px-8 py-4 rounded-lg hover:bg-amberLight transition">Contact Us Today</a></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-amber to-amberDark">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Ready to Light Up Your Home?</h2>
+      <p class="text-navy/80 text-lg mb-8">Get a free, no-obligation quote for permanent residential LED lighting.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="../contact.html" class="bg-navy text-white font-bold px-8 py-4 rounded-lg hover:bg-navyLight transition">Get Your Free Quote</a>
+        <a href="tel:7787444004" class="bg-white/20 text-navy font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition">(778) 744-4004</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="../images/logo-white.webp" alt="Trimlight Van Isle" class="h-10 mb-4">
+          <p class="text-gray-400 text-sm mb-2">Elevate Your Property</p>
+          <p class="text-gray-500 text-sm mb-4">No Ladders &bull; No Hassle</p>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/trimlight_van_isle" target="_blank" rel="noopener" aria-label="Instagram" class="text-gray-400 hover:text-amber transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="https://www.facebook.com/TrimlightVanIsle" target="_blank" rel="noopener" aria-label="Facebook" class="text-gray-400 hover:text-amber transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://x.com/TrimlightVanIsl" target="_blank" rel="noopener" aria-label="X / Twitter" class="text-gray-400 hover:text-amber transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://www.tiktok.com/@trimlightvanisle" target="_blank" rel="noopener" aria-label="TikTok" class="text-gray-400 hover:text-amber transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-4">Lighting Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="landscape-lighting.html" class="text-gray-400 hover:text-amber transition">Landscape</a></li>
+            <li><a href="ridge-lighting.html" class="text-gray-400 hover:text-amber transition">Ridge</a></li>
+            <li><a href="down-lighting.html" class="text-gray-400 hover:text-amber transition">Down</a></li>
+            <li><a href="deck-patio-lighting.html" class="text-gray-400 hover:text-amber transition">Deck and Patio</a></li>
+            <li><a href="commercial-lighting.html" class="text-gray-400 hover:text-amber transition">Commercial</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-4">Main Menu</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../index.html" class="text-gray-400 hover:text-amber transition">Home</a></li>
+            <li><a href="../about.html" class="text-gray-400 hover:text-amber transition">About</a></li>
+            <li><a href="../contact.html" class="text-gray-400 hover:text-amber transition">Contact</a></li>
+            <li><a href="../blog.html" class="text-gray-400 hover:text-amber transition">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
+          <form class="space-y-3" action="https://formsubmit.co/info@trimlightvanisle.ca" method="POST">
+            <input type="text" name="first_name" placeholder="First Name" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
+            <input type="email" name="email" placeholder="Email" required class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
+            <input type="tel" name="phone" placeholder="Phone" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber">
+            <textarea name="message" placeholder="Message" required rows="3" class="w-full bg-navyLight border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber resize-none"></textarea>
+            <button type="submit" class="w-full bg-amber text-navy font-semibold py-2 rounded hover:bg-amberLight transition text-sm">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Trimlight Van Isle Inc. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => { menu.classList.toggle('hidden'); btn.classList.toggle('hamburger-active'); });
+  </script>
+</body>
+</html>
