@@ -33,9 +33,9 @@
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur border-b border-gray-200 dark:border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+      <div class="flex items-center justify-between h-20 sm:h-28">
         <a href="index.html" class="flex items-center gap-2">
-          <img src="images/logo.webp" alt="TVI Home Services logo" class="h-9 w-auto">
+          <img src="images/logo.webp" alt="TVI Home Services logo" class="h-16 sm:h-20 w-auto">
           <span class="text-sm font-medium text-gray-600 dark:text-gray-400 hidden sm:inline">Home Services</span>
         </a>
         <div class="hidden md:flex items-center gap-6">
@@ -211,5 +211,6 @@
   <script>
     document.getElementById('mobile-menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
   </script>
+<script data-dropdown-tap>(function(){var bs=document.querySelectorAll('nav .group > button');function close(){bs.forEach(function(b){var m=b.nextElementSibling;if(m){m.classList.add('opacity-0','invisible');m.classList.remove('opacity-100','visible');}});}bs.forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var m=b.nextElementSibling;if(!m)return;var open=!m.classList.contains('opacity-0');close();if(!open){m.classList.remove('opacity-0','invisible');m.classList.add('opacity-100','visible');}});});document.addEventListener('click',close);})();</script>
 </body>
 </html>

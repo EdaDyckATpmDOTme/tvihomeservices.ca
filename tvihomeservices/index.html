@@ -29,6 +29,9 @@
     .hero-gradient { background: linear-gradient(135deg, #1e3a5f 0%, #0d9488 100%); }
     .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
     .service-card { transition: transform 0.2s, box-shadow 0.2s; }
+    .parallax-bg { position: fixed; inset: 0; z-index: -10; }
+    .parallax-bg img { width: 100%; height: 100%; object-fit: cover; }
+    @media (prefers-reduced-motion: reduce) { .parallax-bg { position: absolute; height: 100vh; } }
     @media (prefers-color-scheme: dark) {
       .dark-overlay { background: rgba(0,0,0,0.6); }
     }
@@ -70,12 +73,17 @@
   </script>
 </head>
 <body class="bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200">
+  <!-- Fixed parallax backdrop (pinned to viewport; content scrolls over it) -->
+  <div class="parallax-bg" aria-hidden="true">
+    <img src="images/hero-home.webp" alt="" class="w-full h-full object-cover">
+    <div class="absolute inset-0" style="background:linear-gradient(135deg, rgba(30,58,95,0.92) 0%, rgba(13,148,136,0.82) 100%)"></div>
+  </div>
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur border-b border-gray-200 dark:border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+      <div class="flex items-center justify-between h-20 sm:h-28">
         <a href="index.html" class="flex items-center gap-2">
-          <img src="images/logo.webp" alt="TVI Home Services logo" class="h-9 w-auto">
+          <img src="images/logo.webp" alt="TVI Home Services logo" class="h-16 sm:h-20 w-auto">
           <span class="text-sm font-medium text-gray-600 dark:text-gray-400 hidden sm:inline">Home Services</span>
         </a>
         <div class="hidden md:flex items-center gap-6">
@@ -122,9 +130,7 @@
 
   <main>
     <!-- Hero -->
-    <section class="relative text-white py-20 md:py-32 overflow-hidden">
-      <img src="images/hero-home.webp" alt="Freshly cleaned home exterior on Vancouver Island" class="absolute inset-0 w-full h-full object-cover">
-      <div class="absolute inset-0" style="background:linear-gradient(135deg, rgba(30,58,95,0.92) 0%, rgba(13,148,136,0.82) 100%)"></div>
+    <section class="relative text-white py-20 md:py-32">
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">From Roof to Driveway, We Take Care of the Dirty Work</h1>
         <p class="text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto">Helping Vancouver Island homeowners care for and protect their properties.</p>
@@ -138,7 +144,7 @@
     </section>
 
     <!-- Intro / Value Statements -->
-    <section class="py-16 md:py-24">
+    <section class="py-16 md:py-24 bg-white dark:bg-gray-950">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-primary-500 dark:text-white mb-6">Vancouver Island Home Restoration Services.</h2>
         <p class="text-lg text-gray-600 dark:text-gray-400 mb-4">We provide professional exterior cleaning and restoration for homes and businesses across Vancouver Island.</p>
@@ -224,7 +230,7 @@
     </section>
 
     <!-- Tile Feature Block -->
-    <section class="py-16 md:py-24">
+    <section class="py-16 md:py-24 bg-white dark:bg-gray-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-10 items-center">
           <div>
@@ -284,7 +290,7 @@
     </section>
 
     <!-- Service Areas -->
-    <section class="py-16 md:py-24">
+    <section class="py-16 md:py-24 bg-white dark:bg-gray-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-primary-500 dark:text-white mb-4">Service Areas on the Island</h2>
@@ -400,5 +406,6 @@
     const menu = document.getElementById('mobile-menu');
     btn.addEventListener('click', () => menu.classList.toggle('hidden'));
   </script>
+<script data-dropdown-tap>(function(){var bs=document.querySelectorAll('nav .group > button');function close(){bs.forEach(function(b){var m=b.nextElementSibling;if(m){m.classList.add('opacity-0','invisible');m.classList.remove('opacity-100','visible');}});}bs.forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var m=b.nextElementSibling;if(!m)return;var open=!m.classList.contains('opacity-0');close();if(!open){m.classList.remove('opacity-0','invisible');m.classList.add('opacity-100','visible');}});});document.addEventListener('click',close);})();</script>
 </body>
 </html>

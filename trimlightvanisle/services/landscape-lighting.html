@@ -269,5 +269,6 @@
     const menu = document.getElementById('mobileMenu');
     btn.addEventListener('click', () => { menu.classList.toggle('hidden'); btn.classList.toggle('hamburger-active'); });
   </script>
+<script data-dropdown-tap>(function(){var bs=document.querySelectorAll('nav .group > button');function close(){bs.forEach(function(b){var m=b.nextElementSibling;if(m)m.classList.add('hidden');});}bs.forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var m=b.nextElementSibling;if(!m)return;var open=!m.classList.contains('hidden');close();if(!open)m.classList.remove('hidden');});});document.addEventListener('click',close);})();</script>
 </body>
 </html>
