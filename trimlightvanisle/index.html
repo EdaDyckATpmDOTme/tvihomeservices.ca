@@ -33,6 +33,12 @@
     .hamburger-active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
     .hamburger-active span:nth-child(2) { opacity: 0; }
     .hamburger-active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+    /* Fixed parallax backdrop: house stays pinned while content scrolls over it */
+    .parallax-bg { position: fixed; inset: 0; z-index: -10; }
+    .parallax-bg img { width: 100%; height: 100%; object-fit: cover; }
+    @media (prefers-reduced-motion: reduce) {
+      .parallax-bg { position: absolute; height: 100vh; }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -81,8 +87,8 @@
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="flex items-center"><img src="images/logo-white.webp" alt="Trimlight Van Isle" class="h-9"></a>
+      <div class="flex items-center justify-between h-20 sm:h-28">
+        <a href="index.html" class="flex items-center"><img src="images/logo-white.webp" alt="Trimlight Van Isle" class="h-16 sm:h-20 lg:h-24 w-auto"></a>
         <div class="hidden md:flex items-center gap-6">
           <a href="index.html" class="text-white hover:text-amber transition">Home</a>
           <a href="about.html" class="text-white hover:text-amber transition">About</a>
@@ -146,12 +152,14 @@
     </div>
   </nav>
 
+  <!-- Fixed parallax house backdrop (pinned to viewport; content scrolls over it) -->
+  <div class="parallax-bg" aria-hidden="true">
+    <img src="images/backyard-lights.webp" alt="" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/80 to-navyLight/85"></div>
+  </div>
+
   <!-- Hero Section -->
   <header class="relative overflow-hidden">
-    <div class="absolute inset-0">
-      <img src="images/backyard-lights.webp" alt="Permanent LED lighting illuminating a Vancouver Island home at dusk" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-gradient-to-br from-navy/95 via-navy/85 to-navyLight/90"></div>
-    </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 sm:py-32">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Beautiful Customizable Lighting</h1>
       <p class="text-xl sm:text-2xl text-amber mb-4 font-semibold">Celebrate Every Season &bull; No Ladders &bull; No Hassle</p>
